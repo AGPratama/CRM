@@ -1,0 +1,31 @@
+{
+  "name": "ionic-monthpicker",
+  "description": "Ionic monthpicker",
+  "main": "gulpfile.js",
+  "authors": [
+    "Petru Isfan"
+  ],
+  "license": "Apache-2.0",
+  "keywords": [
+    "ionic",
+    "month",
+    "picker",
+    "calendar",
+    "date",
+    "time",
+    "year"
+  ],
+  "homepage": "https://github.com/petruisfan/ionic-monthpicker",
+  "moduleType": [],
+  "version": "1.0.0",
+  "_release": "1.0.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "1.0.0",
+    "commit": "8384c15a9162516d730f72b74a71fab08504559a"
+  },
+  "_source": "https://github.com/petruisfan/ionic-monthpicker.git",
+  "_target": "^1.0.0",
+  "_originalSource": "ionic-monthpicker",
+  "_direct": true
+}

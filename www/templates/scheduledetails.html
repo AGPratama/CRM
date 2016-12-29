@@ -1,0 +1,66 @@
+ <ion-modal-view>
+    <ion-header-bar class="bar-positive">
+        <div class="buttons">
+            <button class="button button-icon button-clear ion-ios-arrow-back" ng-click="modalHide()">
+            </button>
+        </div>        
+        <h1 class="title">Schedule Detail</h1>
+
+    </ion-header-bar>
+    <ion-content delegate-handle="modalScroll">
+      <ion-list>
+          <ion-item>
+            <ion-label item-left style="font-weight:bold;">Schedule ID</ion-label>    
+            <div item-content item-left>{{doc_seq_sc}}</div>    
+          </ion-item>
+          <ion-item>
+            <ion-label item-left style="font-weight:bold;">Lokasi</ion-label>    
+            <div item-content item-left>{{location_site_visit_name}}</div>
+          </ion-item>
+          <ion-item>
+            <ion-label item-left style="font-weight:bold;">Lokasi Google Maps</ion-label>    
+            <div item-content item-left>{{place_description}}</div>
+            <button ion-button class = "button button-assertive pull-right" ng-click="setMap()" item-right>Set Map</button>    
+          </ion-item>
+          <ion-item>
+            <ion-label style="font-weight:bold;">PM</ion-label>    
+            <div item-right>{{pm_name}}</div>
+          </ion-item>
+          <ion-item>
+            <ion-label style="font-weight:bold;">SESO</ion-label>    
+            <div item-right>{{seso_name}}</div>    
+          </ion-item>
+          <ion-item>
+            <ion-label style="font-weight:bold;">Tujuan</ion-label>    
+            <div item-right>{{destination}}</div>    
+          </ion-item>
+      </ion-list>
+
+      <input type="text" name="schedule_id" id="schedule_id" ng-model="sc.schedule_id">
+      <input type="text" name="doc_seq_sc" id="doc_seq_sc" ng-model="sc.doc_seq_sc">
+      <input type="text" name="client_id" id="client_id" ng-model="sc.client_id">
+      <input type="text" name="sbu_id" id="sbu_id" ng-model="sc.sbu_id">
+      <input type="text" name="pm" id="pm" ng-model="sc.pm">
+      <input type="text" name="created_by" id="created_by" ng-model="sc.created_by">
+      <input type="text" name="doc_id" id="doc_id" ng-model="sc.doc_id">
+      <input type="text" name="doc_number" id="doc_number" ng-model="sc.doc_number">
+      <input type="text" name="employee_id" id="employee_id" ng-model="sc.employee_id">
+      <input type="text" name="is_active" id="is_active" ng-model="sc.is_active">    
+    </ion-content>
+
+    <ion-footer-bar class="bar bar-footer bar-light">
+        <div class="button-bar">
+          <button class="button button-block button-balanced" ng-if="berangkat" ng-click="confirmBerangkat(sc.schedule_id)" style="margin-top: 0px">
+              Berangkat
+          </button>
+          <button class="button button-block button-balanced" ng-if="checkin" ng-click="confirmBerangkat()" style="margin-top: 0px">
+              Check-In
+          </button>
+          <button class="button button-block button-assertive" ng-click="reschedule()" style="margin-top: 0px">
+              Reschedule
+          </button>
+        </div>
+    </ion-footer-bar>    
+</ion-modal-view>
+
+
