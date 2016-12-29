@@ -1,0 +1,10 @@
+{
+  "name": "ePortal",
+  "app_id": "",
+  "proxies": [
+    {
+      "path": "/api",
+      "proxyUrl": "http://eportal.gos.co.id/eportal_dev/index.php/api"
+    }
+  ]
+}
