@@ -1,0 +1,122 @@
+<ion-header-bar class="bar-positive-900" ng-class="{expanded: isExpanded, 'has-header-fab-left': hasHeaderFabLeft, 'has-header-fab-right': hasHeaderFabRight}" align-title="left">
+<div class="buttons">
+    <button class="button button-icon button-clear ion-ios-arrow-back" ng-click="goBack()">
+    </button>
+  </div>
+  <h1 class="title" style="color:#ffffff !important;">Add Site Visit</h1>
+
+</ion-header-bar>
+<ion-nav-view>
+<ion-view view-title="Add Site Visit">
+
+
+<ion-content>
+    <ion-slide-box ng-init="disableSwipe()" show-pager="false" on-slide-changed="slideHasChanged(index)">
+      <ion-slide>        
+        <form ng-submit="doSave()" >
+          <div class="list">
+            <label class="item item-input item-select">
+              <span class="input-label">SBU</span>
+              <div ng-controller = "getSBU">
+                <select ng-model="sitevisit.sbu_id" ng-options="x.sbu_name for x in dataSBU">
+                  <option value = "{{x.id}}">{{x.sbu_name}}</option>
+                </select>
+              </div>
+            </label>
+            <label class="item item-input">
+              <span class="input-label">Client</span>
+                <input ng-model="sitevisit.client_id" ion-autocomplete type="text" readonly="readonly" class="ion-autocomplete" autocomplete="off" max-selected-items="1" items-method="getClient(query)" item-value-key="id" item-view-value-key="name" items-clicked-method = "clickedMethod(callback)">        
+            </label>
+            <label class="item item-input item-select">
+              <span class="input-label">Category</span>
+              <div ng-controller = "getCategory">
+                <select ng-model="sitevisit.category_id" ng-options="x.category_site_visit_name for x in data">
+                  <option value = "{{x.category_site_visit_id}}">{{x.category_site_visit_name}}</option>
+                </select>
+              </div>
+            </label>
+
+            <label class="item item-input">
+              <span class="input-label">Visit Period</span>
+                <input ng-model="sitevisit.visit_period_caption" type="text" readonly="readonly" ng-click = "openDateVisitPeriod()" />        
+                <input ng-model="sitevisit.visit_period" type="hidden" readonly="readonly" />        
+            </label>
+
+            <label class="item">
+              <button class="button button-block button-positive" type="submit" ng-click="next()" ng-show="slideIndex!=2">Next</button>
+            </label>
+
+          </div>
+        </form>
+      </ion-slide>
+
+      <ion-slide>        
+        <form ng-submit="doSaveSchedule()">
+          <div class="list">
+              <div class="item-input" ng-repeat="schedulee in schedules">
+                <label class="item-input-wrapper">
+                  <span class="input-label">Start Date</span>
+                    <input ng-model="schedulee.visit_datetime_start_caption" type="text" readonly="readonly" ng-click = "openDatePicker($index)">        
+                    <input ng-model="schedulee.visit_datetime_start" type="hidden" readonly="readonly">        
+                </label>
+                <label class="item-input-wrapper">
+                  <span class="input-label">End Date</span>
+                  <input ng-model="schedulee.visit_datetime_end_caption" type="text" readonly="readonly" ng-click = "openDatePickerEnd($index)" />        
+                  <input ng-model="schedulee.visit_datetime_end" type="hidden" readonly="readonly" />
+                </label>
+                <button class="button button-small button-balanced" ng-if="$index == schedules.length - 1" ng-click="addInput()">
+                    <i class="icon ion-plus"></i>
+                </button>
+                    <button class="button button-small button-assertive" ng-if="$index != schedules.length - 1" ng-click="removeInput($index)">
+                    <i class="icon ion-minus"></i>
+                </button>
+              </div>
+
+            <label class="item item-input">
+                <span class="input-label">Lokasi</span>
+                <input ng-model="schedule.location_id" ion-autocomplete type="text" readonly="readonly" class="ion-autocomplete" autocomplete="off" max-selected-items="1" items-method="getLocation(query)" item-value-key="id" item-view-value-key="name" items-clicked-method = "clickedLocation(callback)" />        
+            </label>
+
+            <label class="item item-input">
+              <span class="input-label">Tujuan</span>
+                <input ng-model="schedule.destination" type="text"></input>        
+            </label>
+
+
+            <label class="item item-input">
+              <span class="input-label">Deskripsi</span>
+                <input ng-model="schedule.description" type="text"></input>        
+            </label>
+
+            <label class="item item-input">
+              <span class="input-label">Quantity Employee</span>
+                <input ng-model="schedule.qemployee" valid-number type="text"></input>        
+            </label>
+
+            <label class="item item-input">
+                <span class="input-label">ESO</span>
+                <input ng-model="schedule.eso" ion-autocomplete type="text" readonly="readonly" class="ion-autocomplete" autocomplete="off" max-selected-items="100" items-method="getESO(query)" item-value-key="id" item-view-value-key="employee_name" items-clicked-method = "clickedESO(callback)" />        
+            </label>
+
+            <ion-list>
+              <ion-item class="list-item">
+                <ion-thumbnail item-left>
+                  <img ng-show="fileData !== undefined" ng-src="{{fileData}}" style="text-align: center" width="100%">{{fileName}}
+                </ion-thumbnail>
+              </ion-item>
+            </ion-list>            
+            
+            <a class="button button-clear button-stable icon ion-camera" ng-click="takePhoto()"></a>
+            <a class="button button-clear button-stable icon ion-image" ng-click = "openPhotoLibrary()"></a>
+            
+            <label class="item">
+              <button class="button button-block button-positive" type="submit">Finish</button>
+            </label>
+          </div>
+        </form>
+      </ion-slide>
+
+    </ion-slide-box>
+</ion-content>
+</ion-nav-view>
+</ion-view>

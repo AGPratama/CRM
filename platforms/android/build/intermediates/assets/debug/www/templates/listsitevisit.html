@@ -1,0 +1,32 @@
+<ion-view class="no-padding" view-title="List Site Visit">
+    <ion-content ng-class="{expanded:isExpanded}">
+		  <ion-refresher
+		    pulling-text="Pull to refresh..."
+		    on-refresh="doRefresh()">
+		  </ion-refresher>
+          <ion-list class="content stable-bg" type="list">
+            <ion-item ng-repeat="sv in svs" class="list item no-padding">
+                    <ion-item class="item padding">
+                        <h2>{{sv.doc_seq_id}}</h2>
+                        <p>
+                        Client : {{sv.client_name}}<br />
+                        Periode : {{sv.visit_period}}<br />
+                        Kategori : {{sv.category_site_visit_name}}
+                        </p>
+                    </ion-item>
+                    <ion-item class="item item-divider no-padding">
+                        <a class="button button-clear button-stable icon ion-edit">Edit</a>
+                        <a class="button button-clear button-stable icon ion-trash-a">Delete</a>
+                    </ion-item>
+
+            </ion-item>
+        </ion-list>
+
+        <ion-infinite-scroll on-infinite="getMoreData()" immediate-check="false" ng-if="moredata" distance="10%">
+            <ion-infinite-scroll-content></ion-infinite-scroll-content>
+        </ion-infinite-scroll>
+    </ion-content>
+<button id="fab" ui-sref="formsitevisit" class="button button-positive button-fab button-fab-bottom-right">
+    <i class="icon ion-plus"></i>
+</button>
+</ion-view>

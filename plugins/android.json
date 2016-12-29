@@ -1,0 +1,53 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.ionicframework.eportal107811"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.ionicframework.eportal107811"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.ionicframework.eportal107811"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.ionicframework.eportal107811"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.ionicframework.eportal107811"
+        },
+        "ionic-plugin-keyboard": {
+            "PACKAGE_NAME": "com.ionicframework.eportal107811"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "com.ionicframework.eportal107811"
+        },
+        "cordova-plugin-file-transfer": {
+            "PACKAGE_NAME": "com.ionicframework.eportal107811"
+        },
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "com.ionicframework.eportal107811"
+        },
+        "cordova-plugin-calendar": {
+            "PACKAGE_NAME": "com.ionicframework.eportal107811"
+        },
+        "cordova-plugin-geolocation": {
+            "PACKAGE_NAME": "com.ionicframework.eportal107811"
+        },
+        "cordova-plugin-googlemaps": {
+            "API_KEY_FOR_ANDROID": "AIzaSyD43E3GaFlVAJbZBGaDEoDKVrNBu3FsYEc",
+            "PACKAGE_NAME": "com.ionicframework.eportal107811"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "com.ionicframework.eportal107811"
+        }
+    }
+}

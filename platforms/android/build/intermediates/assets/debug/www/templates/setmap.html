@@ -1,0 +1,26 @@
+ <ion-modal-view>
+    <ion-header-bar class="bar-positive">
+        <div class="buttons">
+            <button class="button button-icon button-clear ion-ios-arrow-back" ng-click="modalMapHide()">
+            </button>
+        </div>
+        
+        <h1 class="title">Set Map</h1>
+        <div class="buttons">
+            <button class="button button-clear" ng-click="submitSetMap()">
+                Submit
+            </button>
+        </div>
+    </ion-header-bar>
+    <ion-content scroll="false">
+        <ion-google-place placeholder="Your address" ng-model="yourModel" location-changed="locationChange"/>
+        <form ng-submit="submitSetMap()" >
+            <input type="hidden" ng-model = "lokasi.location_site_visit_id" />
+            <input type="hidden" ng-model = "lokasi.lat" />
+            <input type="hidden" ng-model = "lokasi.long" />
+            <input type="hidden" ng-model = "lokasi.place_id" />
+            <input type="hidden" ng-model = "lokasi.place_description" />
+        </form>
+        <div id="setmap" data-tap-disabled="false"></div>
+    </ion-content>
+ </ion-modal-view>

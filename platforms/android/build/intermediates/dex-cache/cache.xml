@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\NB-LENOVO-IKSAN\eportal\platforms\android\build\intermediates\exploded-aar\android\CordovaLib\unspecified\debug\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.1"
+        sha1="873daaba9b25e7f07376989b900fc46e99a9271c">
+        <dex dex="C:\Users\NB-LENOVO-IKSAN\eportal\platforms\android\build\intermediates\pre-dexed\debug\CordovaLib-unspecified-debug_81e920b61866ddea0d0854fe579f48d806621e23.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\NB-LENOVO-IKSAN\eportal\platforms\android\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.8.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.1"
+        sha1="bf2e1838e4428616c1aa26edf43de72b5b99bf84">
+        <dex dex="C:\Users\NB-LENOVO-IKSAN\eportal\platforms\android\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-tasks-9.8.0_85b4e4982e34041ffe0472a7c0348abcbde3004c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\NB-LENOVO-IKSAN\eportal\platforms\android\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\9.8.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.1"
+        sha1="122ec9237acd8a57d974b9d529987f1ee6ca5aea">
+        <dex dex="C:\Users\NB-LENOVO-IKSAN\eportal\platforms\android\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-maps-9.8.0_efe10cdec6d1578321cda5aade570b0dec24dd5c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\NB-LENOVO-IKSAN\eportal\platforms\android\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.8.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.1"
+        sha1="9f6d236bac26d02b410e4ee186ba517ace5ee661">
+        <dex dex="C:\Users\NB-LENOVO-IKSAN\eportal\platforms\android\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-basement-9.8.0_5d96bcff7f00e6adc11c1a51c072da4325eb0c08.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\NB-LENOVO-IKSAN\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\24.0.0\support-annotations-24.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.1"
+        sha1="2943c74db6d4346ab8c6531adac91fa05c137c40">
+        <dex dex="C:\Users\NB-LENOVO-IKSAN\eportal\platforms\android\build\intermediates\pre-dexed\debug\support-annotations-24.0.0_9e7959d69bc79af7d204f1fe1784af57724b75eb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\NB-LENOVO-IKSAN\eportal\platforms\android\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\9.8.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.1"
+        sha1="04bbbddf868aa02dd33f9e90d8f5d908c360f638">
+        <dex dex="C:\Users\NB-LENOVO-IKSAN\eportal\platforms\android\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-location-9.8.0_678b345e70a83d6ea469f33d0d39cbf65b070874.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\NB-LENOVO-IKSAN\eportal\platforms\android\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.1"
+        sha1="2f7e6e2dad1bccaf68a8820820adc6c0d5b96d37">
+        <dex dex="C:\Users\NB-LENOVO-IKSAN\eportal\platforms\android\build\intermediates\pre-dexed\debug\com.android.support-support-v4-24.0.0_fcc081cc1b4ced6795804e722badb724dbb7f67a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\NB-LENOVO-IKSAN\eportal\platforms\android\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\jars\libs\internal_impl-24.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.1"
+        sha1="fcaf463e10e69c1923ccf1edeba3b4196d239e00">
+        <dex dex="C:\Users\NB-LENOVO-IKSAN\eportal\platforms\android\build\intermediates\pre-dexed\debug\internal_impl-24.0.0_ac22527b4b21b8c132537ef266c5170d6f7a0ca6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\NB-LENOVO-IKSAN\eportal\platforms\android\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.8.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.1"
+        sha1="7e92aadd0697922316d1395c1887a23aebec640a">
+        <dex dex="C:\Users\NB-LENOVO-IKSAN\eportal\platforms\android\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-base-9.8.0_b3e0b329bb91c8bd4a535c455c65a7919fe57898.jar" />
+    </item>
+
+</items>

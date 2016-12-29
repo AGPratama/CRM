@@ -1,0 +1,50 @@
+ <ion-modal-view>
+    <ion-header-bar class="bar-positive">
+        <div class="buttons">
+            <button class="button button-icon button-clear ion-ios-arrow-back" ng-click="modalHide()">
+            </button>
+        </div>        
+        <h1 class="title">Schedule Detail</h1>
+
+    </ion-header-bar>
+    <ion-content delegate-handle="modalScroll">
+      <ion-list>
+          <ion-item>
+            <ion-label item-left style="font-weight:bold;">Schedule ID</ion-label>    
+            <div item-content item-left>{{doc_seq_sc}}</div>    
+          </ion-item>
+          <ion-item>
+            <ion-label item-left style="font-weight:bold;">Lokasi</ion-label>    
+            <div item-content item-left>{{location_site_visit_name}}</div>
+          </ion-item>
+          <ion-item>
+            <ion-label item-left style="font-weight:bold;">Lokasi Google Maps</ion-label>    
+            <div item-content item-left>{{place_description}}</div>
+            <button ion-button class = "button button-assertive pull-right" ng-click="setMap()" item-right>Set Map</button>    
+          </ion-item>
+          <ion-item>
+            <ion-label style="font-weight:bold;">PM</ion-label>    
+            <div item-right>{{pm_name}}</div>
+          </ion-item>
+          <ion-item>
+            <ion-label style="font-weight:bold;">SESO</ion-label>    
+            <div item-right>{{seso_name}}</div>    
+          </ion-item>
+          <ion-item>
+            <ion-label style="font-weight:bold;">Tujuan</ion-label>    
+            <div item-right>{{destination}}</div>    
+          </ion-item>
+      </ion-list>
+      <div id="map" data-tap-disabled="true"></div>
+    </ion-content>
+    <ion-footer-bar class="bar bar-footer bar-light">
+        <div class="button-bar">
+          <button class="button button-block button-balanced" ng-click="confirmBerangkat()" style="margin-top: 0px">
+              Confirm Berangkat
+          </button>
+          <button class="button button-block button-assertive" ng-click="reschedule()" style="margin-top: 0px">
+              Reschedule
+          </button>
+        </div>
+    </ion-footer-bar>    
+</ion-modal-view>
